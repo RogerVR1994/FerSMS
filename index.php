@@ -21,13 +21,13 @@
 	    // Send message
 	    $response = $p->send_message($params);
 	    // Print the response
-	    echo "Response : ";
-	    print_r($response['response']);
+	    //echo "Response : ";
+	    //print_r($response['response']);
 	    // Print the Api ID
-	    echo "<br> Api ID : {$response['response']['api_id']} <br>";
+	    //echo "<br> Api ID : {$response['response']['api_id']} <br>";
 	    // Print the Message UUID
-	    echo "Message UUID : {$response['response']['message_uuid'][0]} <br>";
-	    header("Location: /Redes/hola.html");
+	    //echo "Message UUID : {$response['response']['message_uuid'][0]} <br>";
+	    //header("Location: /Redes/hola.html");
 	    $result = true;
     }
 ?>
