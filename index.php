@@ -12,7 +12,7 @@
 
 	    $number = $_POST['number'];
 	    $sms = $_POST['sms'];
-	    $sms = '+52'.$sms;
+	    $number = '+52'.$number;
 	    // Send a message
 	    $params = array(
 	            'src' => '14083598743', 
