@@ -4,7 +4,7 @@
 	if(!empty($_POST)){
 
 	    require ('plivo-curl-wrapper.php');
-	    //use Plivo\RestAPI;
+	    
 	    $auth_id = "MAZTKYMJIWY2Y3YZNIYZ";
 	    $auth_token = "YjdlOGJlZTg3NzBhZTI1ZTI0MmY0NWNhNTRmN2U5";
 	    
@@ -15,20 +15,13 @@
 	    $sms = '+52'.$sms;
 	    // Send a message
 	    $params = array(
-	            'src' => '14083598743', // Sender's phone number with country code
-	            'dst' => $number, // Receiver's phone number with country code
+	            'src' => '14083598743', 
+	            'dst' => $number, 
 	            'text' => $sms 
 	        );
-	    // Send message
+	    // Enviar SMS
 	    $response = $p->send_message($params);
-	    // Print the response
-	    //echo "Response : ";
-	    //print_r($response['response']);
-	    // Print the Api ID
-	    //echo "<br> Api ID : {$response['response']['api_id']} <br>";
-	    // Print the Message UUID
-	    //echo "Message UUID : {$response['response']['message_uuid'][0]} <br>";
-	    //header("Location: /Redes/hola.html");
+	   
 	    $result = true;
     }
 ?>
