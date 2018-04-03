@@ -41,7 +41,7 @@
 </head>
 <body>
 	<div class="container">
-		<h1>Enviar SMS</h1>
+		<h1>Enviar SMS (Fer)</h1>
 		<?php
 			if ($result == true){
 				echo '<div class="alert alert-success">Success!</div>';
