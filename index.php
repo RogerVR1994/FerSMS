@@ -12,6 +12,7 @@
 
 	    $number = $_POST['number'];
 	    $sms = $_POST['sms'];
+	    $sms = '+52'.$sms;
 	    // Send a message
 	    $params = array(
 	            'src' => '14083598743', // Sender's phone number with country code
@@ -47,7 +48,7 @@
 			} 
 		?>
 		<form action="index.php" method="POST">
-			<label for="number">Número</label>
+			<label for="number">Número (10 dígitos)</label>
 			<input type="text" name="number" id="number">
 			<br>
 			<label for="sms">Mensaje (no mas de 80 caracteres)</label>
